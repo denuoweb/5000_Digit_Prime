@@ -1,0 +1,12 @@
+{
+  "sha256": "7edadb4d31ba2a12ea3a7a804053d940d0b7551c800a6480e05328c0d4883a88",
+  "digits": 5000,
+  "prefix": "314159",
+  "j": 280512,
+  "t_star": 8336,
+  "k_bits": 8272,
+  "k_odd": true,
+  "k_lt_two_pow_t": true,
+  "witness_base": 11,
+  "euler_check": true
+}
