@@ -1,0 +1,32 @@
+Proth prime N = k*2^8336 + 1, with k odd and 2^8336 > k.
+
+Hash/size
+---------
+- Decimal digits: 5000
+- SHA-256 (ASCII decimal of N): 7edadb4d31ba2a12ea3a7a804053d940d0b7551c800a6480e05328c0d4883a88
+
+Structure
+---------
+- n (power of 2): 8336
+- k bits: 8272
+- k (decimal digits, approx): 2491
+- k is odd: True
+- 2^n > k: True
+
+Proth proof
+-----------
+- Witness base a = 11
+- Verified pow(a, (N-1)//2, N) == N-1: True
+
+Suggested verification (OpenPFGW)
+---------------------------------
+pfgw64 -tp -a11 -q="<k>*2^8336+1" -v
+
+Suggested certificate (LLR2/PRST)
+---------------------------------
+llr64 -o cert.txt -a11 -d -q "<k>*2^8336+1"
+
+Fingerprints
+------------
+First 100 digits: 3141590000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Last 100 digits:  2563662150282156327635382928881315888151065058950728166913584890657572640754505429925889684231159809
